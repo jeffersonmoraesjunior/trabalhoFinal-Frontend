@@ -1,3 +1,5 @@
+@import url(header.css);
+@import url(footer.css);
 * {
     /* margin, padding e box-sizing zerado tira toda a borda do navegador. Recomendado fazer estes 3 passos em todo projeto */
     margin: 0;
@@ -8,4 +10,10 @@
     list-style: none;
     /* remove a linha dos links */
     text-decoration: none;
+}
+
+:root{
+    --primary-color: white;
+    --secondary-color: black;
+    --text-color: rgb(255, 251, 34);
 }

@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    column-gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    height: 60px;
+}
+
+.menu{
+    justify-content: space-between;
+    margin-right: 20px;
+    text-align: right;
+    width: 100%;
+    display: contents;
+}
+
+header ul{
+    margin-bottom: 0;
+    margin-right: 3%;
+}
+
+header li{
+    display: inline;
+    margin-right: 12px;
+    font-weight: 600;
+}
+
+header li:hover{
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-left: 3%;
+}
