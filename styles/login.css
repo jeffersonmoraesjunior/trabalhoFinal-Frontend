@@ -129,7 +129,7 @@ form .form-help :where(label, a) {
     .form-wrapper {
         padding: 14%;
         width: 90%;
-        top: 43%;
+        margin-top: 30%;
     }
 
     .form-wrapper form {
