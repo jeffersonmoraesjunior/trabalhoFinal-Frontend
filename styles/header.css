@@ -17,6 +17,10 @@ header .navbar {
     display: none;
 }
 
+header .menuItem{
+    cursor: pointer;
+}
+
 header .menu{
     display: contents;
 }
