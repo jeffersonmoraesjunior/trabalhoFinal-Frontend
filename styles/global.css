@@ -16,11 +16,22 @@
 }
 
 :root{
+    --black-color: rgb(28, 28, 28);
+    --grey-color: rgb(59, 59, 59);
+    --yellow-color: rgb(255, 224, 2);
+    --orange-color: rgb(255, 182, 6);
+    --sand-color: rgb(178, 130, 40);
+
     --primary-color: white;
     --font-black: #000;
-    --background-color: #000000;
+    --background-color: var(--black-color);
     --text-color: #FFB606;
     --color-sombra: #B28228;
+}
+
+body{
+    background-color: var(--black-color);
+    color: var(--primary-color);
 }
 
 button:hover {
