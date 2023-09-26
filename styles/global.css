@@ -1,0 +1,11 @@
+* {
+    /* margin, padding e box-sizing zerado tira toda a borda do navegador. Recomendado fazer estes 3 passos em todo projeto */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* respeitar o tamanho da borda do pai*/
+    /* list-style remove o ponto de uma lista ul - li */
+    list-style: none;
+    /* remove a linha dos links */
+    text-decoration: none;
+}
