@@ -1,20 +1,9 @@
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, .75);
-    background-color: rgb(34, 34, 34);
+    position: relative;
+    background-color: var(--background-color);
     color: var(--primary-color);
-    display: flex;
-    font-family: Helvetica, sans-serif;
     width: 100%;
+    font-weight: 600;
 }
 
 footer #box-footer {
@@ -27,12 +16,13 @@ footer .duvidas-ligue {
     display: flex;
 }
 footer .duvidas-ligue p {
+    color: var(--primary-color);
+    font-size: 16px;
     margin-right: 7px;
 }
 
 footer .duvidas-ligue a {
     color: var(--primary-color);
-    font-family: Helvetica;
     font-weight: 600;
 }
 
@@ -53,14 +43,14 @@ footer li {
 }
 
 footer #language select {
-    color: var(--color-language);
+    color: var(--primary-color);
     background: none;
     border: none;
     font-weight: 600;
 }
 
 #language {
-    border: 1px solid var(--color-language);
+    border: 1px solid var(--primary-color);
     display: flex;
     padding: 10px;
     align-items: center;

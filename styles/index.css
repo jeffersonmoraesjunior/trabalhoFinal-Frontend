@@ -1,0 +1,77 @@
+.row {
+    margin: 80px 0;
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+    left: 5%;
+}
+
+h1 {
+    color: var(--font-black);
+    font-size: 80px;
+}
+
+.row p {
+    color: var(--font-black);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+button {
+    width: 180px;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 0;
+    background: var(--text-color);
+    border: 0;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+button:hover {
+    background: var(--color-sombra);
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    color: var(--primary-color);
+    display: inline-flex;
+    border-radius: 12px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-image: url() ;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card1 {
+    background: url(../assets/img/imagem-grecia.jpg);
+}
+.card2 {
+    background: url(../assets/img/imagem-grecia.jpg);
+}
+.card3 {
+    background: url(../assets/img/imagem-grecia.jpg);
+}
+.card4 {
+    background: url(../assets/img/imagem-grecia.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
