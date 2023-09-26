@@ -5,11 +5,11 @@ section main_container {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: var(--primary-color);
+  color: var(--font-black);
 }
 
 section h1 {
-  color: var(--primary-color);
+  color: var(--font-black);
   font-size: 32px;
   font-weight: 600;
 }
