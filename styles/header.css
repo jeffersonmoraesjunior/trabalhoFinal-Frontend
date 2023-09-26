@@ -9,7 +9,7 @@ header{
     color: var(--primary-color);
 }
 
-.menu{
+header .menu{
     display: contents;
 }
 
@@ -35,9 +35,12 @@ header li:hover{
     display: flex;
     position: relative;
     margin-left: 2%;
+    height: 50%;
+    width: auto;
+    filter: invert(42%) sepia(93%) saturate(0%) hue-rotate(87deg) brightness(119%) contrast(119%);
 }
 
-.logo:hover {
+header .logo:hover {
     transform: translateY(-5px);
     transition: transform 0.4s ease-in-out;
 }

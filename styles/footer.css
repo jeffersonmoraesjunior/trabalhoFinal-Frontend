@@ -49,7 +49,7 @@ footer #language select {
     font-weight: 600;
 }
 
-#language {
+footer #language {
     border: 1px solid var(--primary-color);
     display: flex;
     padding: 10px;
