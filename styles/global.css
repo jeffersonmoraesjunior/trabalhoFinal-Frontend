@@ -1,6 +1,7 @@
 @import url(header.css);
 @import url(footer.css);
 @import url(index.css);
+@import url(login.css);
 
 * {
     /* margin, padding e box-sizing zerado tira toda a borda do navegador. Recomendado fazer estes 3 passos em todo projeto */
@@ -18,9 +19,14 @@
 :root{
     --primary-color: white;
     --font-black: #000;
+    
     --background-color: #000000;
+    
     --text-color: #FFB606;
     --color-sombra: #B28228;
+    
+    --color-buttom: #FFB606;
+    --hover-buttom: #B28228;
 }
 
 button:hover {
