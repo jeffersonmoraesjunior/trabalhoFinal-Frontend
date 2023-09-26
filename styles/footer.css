@@ -59,3 +59,10 @@ footer #language {
     width: 150px;
     height: auto;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 740px) {
+    body::before {
+        display: none;
+    }
+}

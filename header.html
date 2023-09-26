@@ -9,32 +9,77 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/global.css" />
     
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <title>Document</title>
+</head>
+<body>
+
     <header>
+
       <div class="col-sm-10 menu">
-        <div class="col-sm-1 logo">
-          <!-- <ion-icon name="moon-outline"></ion-icon> -->
-          <img src="./assets/img/AE_logo.svg" alt="" />
-        </div>
-        <ul>
-          <li class="menuItem">Home</li>
-          <li class="menuItem">Quem somos</li>
-          <li class="menuItem">Assinatura</li>
-          <li>|</li>
-          <li class="menuItem">Inscrever-se</li>
-          <li class="menuItem">Entrar</li>
-        </ul>
+          <div class="col-sm-1 logo">
+              <!-- <ion-icon name="moon-outline"></ion-icon> -->
+              <img src="./assets/img/AE_logo.svg" alt="">
+          </div>
+          <ul>
+              <li class="menuItem" onclick="return menuRedirect('index')">Home</li>
+              <li class="menuItem" onclick="return menuRedirect('about')">Sobre</li>
+              <li class="menuItem">Assinatura</li>
+              <li>|</li>
+              <li class="menuItem">Inscrever-se</li>
+              <li class="menuItem" onclick="return menuRedirect('login')">Entrar</li>
+          </ul>
       </div>
+
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <!-- Brand -->
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler botao-hamburguer" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Assinatura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Inscreva-se</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entrar</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        
+
     </header>
+
+    <script>
+      function menuRedirect(site)
+      {
+        if(site === "about"){
+          window.location.href = 'about.html';
+        }
+        if(site === "index"){
+          window.location.href = 'index.html';
+        }
+        if(site === "login"){
+          window.location.href = 'login.html';
+        }
+      }
+</script>
 
     <script
       type="module"
@@ -72,5 +117,13 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+<<<<<<< HEAD
   </body>
 </html>
+=======
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
+>>>>>>> 4cafeb3bece53acd2ffb395c595d4fb4f1c0da75
