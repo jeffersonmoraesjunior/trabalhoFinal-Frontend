@@ -1,21 +1,15 @@
 header{
+    width: 100%;
+    height: 60px;
+
     display: flex;
     align-items: center;
-    background-color: rgb(34, 34, 34);
-    color: white;
-    column-gap: 60px;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    position: relative;
-    height: 60px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
 }
 
 .menu{
-    justify-content: space-between;
-    margin-right: 20px;
-    text-align: right;
-    width: 100%;
     display: contents;
 }
 
@@ -25,7 +19,7 @@ header ul{
 }
 
 header li{
-    display: inline;
+    display: inline-block;
     margin-right: 12px;
     font-weight: 600;
 }
@@ -33,11 +27,17 @@ header li{
 header li:hover{
     color: var(--text-color);
     cursor: pointer;
+    transform: translateY(-5px);
+    transition: transform 0.4s ease-in-out;
 }
 
-.logo{
+.logo {
     display: flex;
     position: relative;
-    justify-content: center;
-    margin-left: 3%;
+    margin-left: 2%;
+}
+
+.logo:hover {
+    transform: translateY(-5px);
+    transition: transform 0.4s ease-in-out;
 }
