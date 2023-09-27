@@ -6,12 +6,19 @@
 // Check if the user's is logged
 const userLogged = localStorage.getItem('acesso');
 
-if ((location.pathname !=='/login.html') && (userLogged === false || userLogged === null)) {
+if (((location.pathname !=='/login.html') && (location.pathname !=='/formulario.html')) && (userLogged === false || userLogged === null)) {
   location.replace('login.html');
 }
-if ((location.pathname ==='/login.html') && (userLogged)) {
+if (((location.pathname === '/login.html') || (location.pathname ==='/formulario.html')) && (userLogged)) {
   location.replace('index.html');
 }
+
+// Esta função faz com que a URL do site não mude, seja o que for enviado como parâmetro
+function alterar_url(nova){
+  history.pushState({}, null, nova);
+}
+
+alterar_url('index.html');
 
 // Get the theme toggle button element
 const themeToggle = document.getElementById('theme-toggle');
