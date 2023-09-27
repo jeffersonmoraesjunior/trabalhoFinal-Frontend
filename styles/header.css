@@ -2,7 +2,7 @@ header{
     width: 100%;
     height: 60px;
 
-    position: fixed; /* comenta aqui depois para nao ficar fixado no topo*/
+    /*position: fixed; comenta aqui depois para nao ficar fixado no topo*/
     display: flex;
     align-items: center;
     justify-content: space-between;
