@@ -4,7 +4,7 @@
     border-radius: 7px;
     padding: 60px;
     width: 450px;
-    background: rgba(0, 0, 0, 0.95);
+    background: var(--black-color);
     margin: 10% auto 12%;    
 }
 
@@ -18,17 +18,21 @@
 }
 
 form .form-control {
-    background-color: #333;
+    background-color: var(--grey-color);
     border: none;
     height: 50px;
     position: relative;
     margin-bottom: 16px;
+    opacity: 0.8;
+}
+form .form-control:hover, form .form-control input:focus {
+    opacity: 1;
 }
 
 .form-control input {
     height: 100%;
     width: 100%;
-    background: #333;
+    background-color: var(--grey-color);
     border: none;
     outline: none;
     border-radius: 4px;
@@ -38,7 +42,6 @@ form .form-control {
 }
 
 .form-control input:is(:focus, :valid) {
-    background: #444;
     padding: 16px 20px 0;
 }
 

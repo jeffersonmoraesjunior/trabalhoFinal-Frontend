@@ -36,7 +36,7 @@ header li{
     font-weight: 600;
 }
 
-header .menu li:hover{
+header .menu li.menuItem:hover{
     color: var(--text-color);
     cursor: pointer;
     transform: translateY(-5px);

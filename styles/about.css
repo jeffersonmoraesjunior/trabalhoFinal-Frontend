@@ -1,5 +1,5 @@
 section {
-  margin: 50px 0px;
+  margin: 0px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -7,6 +7,8 @@ section {
   align-items: center;
   text-align: center;
   color: var(--font-black);
+  min-height: 500px;
+  padding-top: 100px;
 }
 
 section h1 {
@@ -16,44 +18,68 @@ section h1 {
   font-size: 52px;
   font-weight: 600;
 }
+
 section h3 {
   text-align: center;
   font-size: 16px;
   color: var(--font-black);
+  margin-top: 20px;
 }
-
-section.profile{
+section.profile {
   padding: 5px 0px;
+  box-shadow: 0px 5px 10px rgb(255, 255, 255, 0.2);
 }
 
-section.invert-color{
+section.invert-color {
   background-color: var(--black-color);
 }
 
-section .name, .cargo{
+.social-list a {
+  text-decoration: none;
+  color: var(--grey-color);
+  font-size: 20px;
+}
+
+section ul.social-list a:hover {
+  text-decoration: none;
+  color: var(--black-color);
+  scale: 110%;
+}
+
+section.invert-color ul.social-list a:hover {
+  color: var(--yellow-color);
+}
+
+section.invert-color .name,
+section.invert-color .cargo,
+section.invert-color .social-list a {
+  text-decoration: none;
   color: var(--sand-color);
 }
 
-section p.descricao{
+section p.descricao {
+  margin: 40px 0;
+  color: var(--sand-color);
+  text-shadow: 0 0 1px;
+}
+
+section.invert-color p.descricao {
   color: var(--primary-color);
 }
 
 section p.title-tag {
   text-align: center;
   text-transform: uppercase;
-  font-size: 12px !important;
+  font-size: 14px !important;
   font-weight: 600;
   color: var(--sand-color);
 }
 
-section .profile-photo{
+section .profile-photo {
   height: 200px;
   margin-bottom: 30px;
   border-radius: 50%;
-  box-shadow: 0px 0px  25px var(--grey-color);
-}
-section .profile-photo::after{
-  box-shadow: 0px 10px 15px rgba(215, 239, 29, 0.2);
+  box-shadow: 0px 0px 30px 5px var(--grey-color);
 }
 
 li {
@@ -61,14 +87,6 @@ li {
   margin: 0 6px;
 }
 
-.social-list a {
-  text-decoration: none;
-  color: var(--sand-color);
-}
-.social-list a:hover {
-  text-decoration: none;
-  color: var(--yellow-color);
-}
 
 hr:not([size]).hr.hr-blurry {
   background-color: var(--mdb-divider-blurry-bg);
@@ -76,24 +94,33 @@ hr:not([size]).hr.hr-blurry {
   height: var(--mdb-divider-blurry-height);
   opacity: var(--mdb-divider-blurry-opacity);
 }
+
 hr:not([size]).hr {
   --mdb-divider-height: 2px;
   --mdb-divider-bg: #f5f5f5;
   --mdb-divider-opacity: 1;
   --mdb-divider-blurry-bg: transparent;
-  --mdb-divider-blurry-bg-image: linear-gradient(
-    90deg,
-    transparent,
-    #666,
-    transparent
-  );
+  --mdb-divider-blurry-bg-image: linear-gradient(90deg,
+      transparent,
+      #666,
+      transparent);
   --mdb-divider-blurry-height: 1px;
   --mdb-divider-blurry-opacity: 0.25;
   height: var(--mdb-divider-height);
   background-color: var(--mdb-divider-bg);
   opacity: var(--mdb-divider-opacity);
 }
+
 hr.hr,
 hr.vr {
   border-top: none !important;
+}
+
+section.integrantes {  
+  position: relative;
+  background: radial-gradient(circle, #4f46e4 2%, transparent 7%), radial-gradient(circle at bottom left, #4f46e4 2%, transparent 2%), radial-gradient(circle at bottom right, #4f46e4 2%, transparent 2%), radial-gradient(circle at top left, #4f46e4 2%, transparent 6%), radial-gradient(circle at top right, #4f46e4 0%, transparent 6%);
+  background-size: 1em 1em;
+  background-color: #ffffff;
+  /* opacity: 0.3; */
+  box-shadow: inset 0px 0px 50px 50px white;
 }
