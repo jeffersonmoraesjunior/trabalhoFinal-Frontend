@@ -15,32 +15,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Codigo base para funcionar e trazer o header e o footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
     <script>
         $(function () {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
+            $("header").load("header.html");
+            $("footer").load("footer.html");
         });
     </script>
+    <link rel="shortcut icon" href="./assets/img/AE_logo.ico" type="image/x-icon">
+    <!-- Fim Codigo base para funcionar e trazer o header e o footer: crie a tag header e footer no body -->
+
 
     <title>ÆDO Music</title>
 
 </head>
 <body>
 
-    <div id="header"></div>
+    <header></header>
 
     <div class="form-wrapper">
         <h2>Entrar</h2>
         <form action="#">
             <div class="form-control">
-                <input type="text" required>
+                <input type="email" id="email" required>
                 <label>Email número de telefone</label>
             </div>
             <div class="form-control">
-                <input type="password" required>
+                <input type="password" id="password" required>
                 <label>Senha</label>
             </div>
-            <button type="submit">Entrar</button>
+            <button type="submit" onclick="logar()">Entrar</button>
             <div class="form-help"> 
                 <div class="remember-me">
                     <input type="checkbox" id="remember-me">
@@ -49,7 +56,7 @@
                 <a href="#">Ajuda?</a>
             </div>
         </form>
-        <p>Novo por aqui? <a href="./forms.html">Criar conta</a></p>
+        <p>Novo por aqui? <a href="./formulario.html">Criar conta</a></p>
         <small>
             Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
             <a href="#">Saiba mais</a>
@@ -57,10 +64,11 @@
     </div>
 
     <!--Remaining section-->
-    <div id="footer"></div>
+    <footer></footer>
 
     <!-- adicionando o javaScript  -->
     <script src="./script.js"></script>
+    <script src="./js/login.js"></script>
     
 </body>
 </html>
