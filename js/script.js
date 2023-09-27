@@ -3,6 +3,16 @@
 //   const changeMode = document.getElementById("id");
 // })
 
+// Check if the user's is logged
+const userLogged = localStorage.getItem('acesso');
+
+if ((location.pathname !=='/login.html') && (userLogged === false || userLogged === null)) {
+  location.replace('login.html');
+}
+if ((location.pathname ==='/login.html') && (userLogged)) {
+  location.replace('index.html');
+}
+
 // Get the theme toggle button element
 const themeToggle = document.getElementById('theme-toggle');
 
