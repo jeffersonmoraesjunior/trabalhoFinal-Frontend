@@ -27,6 +27,21 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/global.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  
+  <!-- Codigo base para funcionar e trazer o header e o footer -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $("topButton").load("back_to_top_button.html");
+    });
+  </script>
+  <link rel="shortcut icon" href="./assets/img/AE_logo.ico" type="image/x-icon">
+  <!-- Fim Codigo base para funcionar e trazer o header e o footer: crie a tag header e footer no body -->
+
   </head>
 
   <body>
@@ -41,7 +56,7 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <header>
+    <header id="top-page">
       <div class="col-sm-10 menu">
         <div class="col-sm-1 logo">
           <!-- <ion-icon name="moon-outline"></ion-icon> -->
@@ -124,6 +139,8 @@
         </div>
       </nav>
     </header>
+
+    <topButton></topButton>
 
     <script
       type="module"
