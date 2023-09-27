@@ -3,6 +3,8 @@
 @import url(index.css);
 @import url(login.css);
 @import url(formulario.css);
+@import url(dialogPopUp.css);
+@import url(back-to-top-button.css);
 
 * {
     /* margin, padding e box-sizing zerado tira toda a borda do navegador. Recomendado fazer estes 3 passos em todo projeto */
