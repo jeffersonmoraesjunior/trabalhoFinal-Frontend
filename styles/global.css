@@ -32,6 +32,7 @@
     
     --color-buttom: #FFB606;
     --hover-buttom: #B28228;
+    --brightness: 119%
 }
 
 body{
@@ -42,3 +43,144 @@ body{
 button:hover {
     cursor: pointer;
 }
+
+
+
+
+
+/* ----- AQUI JAZ DARK THEME MODE ----- */
+
+
+.dark-theme {    
+    --black-color: white;
+    --grey-color: rgb(255, 182, 6);
+    --yellow-color: rgb(59, 59, 59);
+    --orange-color: rgb(28, 28, 28);
+    --sand-color: rgb(178, 130, 40);
+
+    --primary-color: black;
+    --font-black: white;
+    --background-color: var(--black-color);
+    --text-color: #FFB606;
+    --color-sombra: #B28228;
+    
+    --color-buttom: #FFB606;
+    --hover-buttom: #B28228;
+    --brightness: 30%;
+
+
+    --primary-color: var(--orange-color);
+    --secondary-color: var(--black-color);
+    --primary-gradient-color: var(--sand-color);
+    --secondary-gradient-color: var(--orange-color);
+    --border: var(--grey-color);
+    --box-shadow: var(--orange-color);
+}
+
+.background {
+  /* background: url("https://image.lexica.art/full_jpg/2db7cd1a-b4ed-401c-a519-e387360a3c43") */
+    /* fixed; */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+body.dark-theme {
+  /* background: url("https://image.lexica.art/full_jpg/63c84620-26dc-4f1f-a76f-cc9cb2d2de9f") */
+    /* fixed; */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+#theme-toggle{
+    position: flex;
+    align-content: center;
+    justify-content: center;
+    margin-right: 20px;
+    float: right;
+    z-index: 1000;
+    display: inline-grid;
+}
+
+/* ----- TOGGLE DARK LIGHT MODE -----*/
+/* https://www.youtube.com/watch?v=S-T9XoCMwt4
+https://redstapler.co/pure-css-minimal-dark-mode-toggle-button/ */
+.dark-light-label {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+      inset 0px -5px 15px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  .dark-light-label:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .dark-light-toggle {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  .dark-light-toggle:checked + .dark-light-label {
+    background: #16123e;
+  }
+  .dark-light-toggle:checked + .dark-light-label:after {
+    left: 45px;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      180deg,
+      var(--secondary-gradient-color), var(--primary-gradient-color)    
+    );
+  }
+  .dark-light-label,
+  .dark-light-label:after {
+    transition: 0.3s;
+  }
+  .dark-light-label:active:after {
+    width: 25px;
+  }
+  
+  label ion-icon {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    z-index: 100;
+  }
+  label ion-icon.sun {
+    left:8px;
+    color: #000;
+    transition: 0.3s;
+  }
+  label ion-icon.moon {
+    left:31px;
+    color: rgb(0, 0, 0, 0);
+    transition: 0.3s;
+  }
+  input:checked + label ion-icon.sun {
+    color:rgb(0, 0, 0, 0);
+  }
+  input:checked + label ion-icon.moon {
+    color:#fff;
+  }
+  /* ----- END TOGGLE DARK LIGHT MODE -----*/

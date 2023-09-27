@@ -4,6 +4,7 @@ footer {
     color: var(--primary-color);
     width: 100%;
     font-weight: 600;
+    margin-top: 0.3%;
 }
 
 footer #box-footer {
