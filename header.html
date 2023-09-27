@@ -36,7 +36,7 @@
           <li class="menuItem" onclick="return menuRedirect('about')">Sobre</li>
           <li class="menuItem">Assinatura</li>
           <li>|</li>
-          <li class="menuItem">Inscrever-se</li>
+          <li class="menuItem" onclick="return menuRedirect('formulario')">Inscrever-se</li>
           <li class="menuItem" onclick="return menuRedirect('login')">
             Entrar
           </li>
@@ -67,10 +67,8 @@
               Quem Somos
             </li>
             <li class="menuItem">Assinatura</li>
-            <li class="menuItem">Inscreva-se</li>
-            <li class="menuItem" onclick="return menuRedirect('login')">
-              Entrar
-            </li>
+            <li class="menuItem"onclick="return menuRedirect('formulario')">Inscreva-se</li>
+            <li class="menuItem" onclick="return menuRedirect('login')">Entrar</li>
           </ul>
         </div>
       </nav>
@@ -86,6 +84,9 @@
         }
         if (site === "login") {
           window.location.href = "login.html";
+        }
+        if (site === "formulario") {
+          window.location.href = "formulario.html";
         }
       }
     </script>
