@@ -6,11 +6,16 @@
 // Check if the user's is logged
 const userLogged = localStorage.getItem('acesso');
 
-if (((location.pathname !=='/login.html') && (location.pathname !=='/formulario.html')) && (userLogged === false || userLogged === null)) {
+if (((location.pathname !=='/login.html') && (location.pathname !=='/formulario.html')) && (userLogged === null || userLogged === 'false')) {
   location.replace('login.html');
 }
-if (((location.pathname === '/login.html') || (location.pathname ==='/formulario.html')) && (userLogged)) {
+
+if (((location.pathname === '/login.html') || (location.pathname ==='/formulario.html')) && (userLogged === 'true')) {
   location.replace('index.html');
+}
+if(userLogged === 'true'){
+  document.getElementById('login').innerHTML = 'Sair';
+  document.getElementById('sigin').setAttribute('hidden', true);
 }
 
 // Esta função faz com que a URL do site não mude, seja o que for enviado como parâmetro
