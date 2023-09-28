@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/index.css">
-    
+
     <!-- Codigo base para funcionar e trazer o header e o footer -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
-    
+        </script>
+
     <script>
         $(function () {
             $("header").load("header.html");
@@ -28,51 +28,45 @@
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXKFNF9R"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXKFNF9R" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+
     <header></header>
 
-    <section class="dialog" id="dialog">    
+
+    <section class="dialog" id="dialog">
         <div class="cookies-card">
             <p class="title">Consentimento de Cookies</p>
-            <p class="info">Ao utilizar este site, você automaticamente concorda com o uso de cookies. <a href="https://support.google.com/chrome/answer/95647?hl=pt-BR&co=GENIE.Platform%3DDesktop">Saiba Mais</a>
+            <p class="info">Ao utilizar este site, você automaticamente concorda com o uso de cookies. <a
+                    href="https://support.google.com/chrome/answer/95647?hl=pt-BR&co=GENIE.Platform%3DDesktop">Saiba
+                    Mais</a>
             </p>
             <button class="cta" onclick="aceitarBotao()" id="ctaBtn">Aceitar todos</button>
-            <a href="https://support.google.com/chrome/answer/95647?hl=pt-BR&co=GENIE.Platform%3DDesktop" class="settings" target="_blank">Configurações de Cookies</a>
+            <a href="https://support.google.com/chrome/answer/95647?hl=pt-BR&co=GENIE.Platform%3DDesktop"
+                class="settings" target="_blank">Configurações de Cookies</a>
         </div>
     </section>
 
     <div class="row">
-        <div class="col">
+        <div class="col-sm-6">
             <h1>ÆDO</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur molestiae corporis quidem, neque iusto exercitationem
-                sapiente ad expedita asperiores dolores ex sit iure, quam culpa
-                accusamus ut. Natus, cum dolorum.
+            <img src="https://i.gifer.com/A8BO.gif" alt="">
+            <p class="description">No recanto do nosso site, a música é uma odisseia de descobertas. Embarque numa vasta
+                viagem por sons e
+                géneros, que vão desde os recém-nascidos até aos clássicos eternos. Conceda-se a um mergulho profundo
+                num mundo onde a música é a própria essência da emoção. 'Explorar. Descobrir. Escutar.' Junte-se a nós
+                nesta demanda pela trilha sonora perfeita, onde cada nota é um portal para a imaginação.
             </p>
             <button>Saiba Mais</button>
         </div>
-        <div class="col col-card">                       
-            <div class="card card1">
-                <h5>Monkey Desert</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="card card2">
-                <h5>Desert Western</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="card card3">
-                <h5>Eagle Musica</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-            <div class="card card4">
-                <h5>Elephant Musica</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>           
+        <div class="col-sm-6 col-card">
+            <div class="card card1"></div>
+            <div class="card card2"></div>
+            <div class="card card3"></div>
+            <div class="card card4"></div>
         </div>
-        
+
     </div>
 
     <!--Remaining section-->
@@ -80,7 +74,8 @@
 
     <!-- adicionando o javaScript  -->
     <script src="./js/login.js"></script>
-    <script src="./js/dialog_pop_up.js"></script>    
+    <script src="./js/dialog_pop_up.js"></script>
 
 </body>
+
 </html>
