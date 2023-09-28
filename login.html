@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/login.css">
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
+        </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Codigo base para funcionar e trazer o header e o footer -->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
+        </script>
     <script>
         $(function () {
             $("header").load("header.html");
@@ -31,6 +33,7 @@
     <title>ÆDO Music</title>
 
 </head>
+
 <body>
 
     <header></header>
@@ -47,7 +50,7 @@
                 <label>Senha</label>
             </div>
             <button type="submit" onclick="logar()">Entrar</button>
-            <div class="form-help"> 
+            <div class="form-help">
                 <div class="remember-me">
                     <input type="checkbox" id="remember-me">
                     <label for="remember-me">Lembre-se de mim</label>
@@ -64,10 +67,20 @@
 
     <!--Remaining section-->
     <footer></footer>
-    
+
     <!-- adicionando o javaScript  -->
     <!-- <script src="./js/script.js"></script> -->
     <script src="./js/login.js"></script>
-    
+    <script>
+        var remember_me = localStorage.getItem("remember_me");        
+        
+        if (remember_me == "true") {
+            document.getElementById("email").value = localStorage.getItem("remember_me_user");
+            document.getElementById("password").value = localStorage.getItem("remember_me_pass");
+            document.getElementById("remember-me").checked = true;
+        }
+    </script>
+
 </body>
+
 </html>

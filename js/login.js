@@ -1,9 +1,18 @@
 function logar() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
+  var remember_me = document.getElementById("remember-me").checked;
 
   if (verifyUser(email, password) || (email == "admin@aedo.com" && password == "123")) {
     localStorage.setItem("acesso", true);
+
+    if(remember_me == true){
+      localStorage.setItem("remember_me", true);
+      localStorage.setItem("remember_me_user", email);
+      localStorage.setItem("remember_me_pass", password);
+    } else{      
+      localStorage.setItem("remember_me", false);
+    }
 
     // Evite o envio do formulário padrão
     event.preventDefault();
