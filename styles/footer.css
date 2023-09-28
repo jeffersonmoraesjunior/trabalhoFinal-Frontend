@@ -57,8 +57,13 @@ footer #language {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    width: 150px;
+    width: 200px;
     height: auto;
+}
+
+.goog-te-combo option {
+    color: var(--font-black);
+    background-color: var(--primary-color);
 }
 
 /* RESPONSIVIDADE */
