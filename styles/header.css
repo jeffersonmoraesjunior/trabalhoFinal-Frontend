@@ -98,4 +98,8 @@ header .logo:hover {
         margin: 0;
         width: 100%;
     }
+
+    #theme-toggle {
+        margin: 0 auto;
+    }
 }

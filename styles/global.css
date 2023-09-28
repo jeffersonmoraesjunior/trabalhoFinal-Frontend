@@ -7,16 +7,13 @@
 @import url(back-to-top-button.css);
 
 * {
-    /* margin, padding e box-sizing zerado tira toda a borda do navegador. Recomendado fazer estes 3 passos em todo projeto */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* respeitar o tamanho da borda do pai*/
-
-    list-style: none; /* list-style remove o ponto de uma lista ul - li */
-    
-    text-decoration: none; /* remove a linha dos links */
-    
-    font-family: 'Inter', sans-serif; /* fonte do projeto */
+  /* margin, padding e box-sizing zerado tira toda a borda do navegador. Recomendado fazer estes 3 passos em todo projeto */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* respeitar o tamanho da borda do pai*/
+  list-style: none; /* list-style remove o ponto de uma lista ul - li */
+  text-decoration: none; /* remove a linha dos links */
+  font-family: 'Inter', sans-serif; /* fonte do projeto */
 }
 
 :root{
