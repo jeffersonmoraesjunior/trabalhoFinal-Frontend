@@ -15,8 +15,13 @@ form input.form-control{
 }
 
 #box-login .form-control{
-    color: white;
+    /* color: white; */
     margin-bottom: 0px !important;
+}
+
+#userState{
+    color: white;
+    background-color: var(--grey-color);
 }
 
 .button-enviar {  
