@@ -14,7 +14,7 @@ form input.form-control{
     color: white;
 }
 
-.form-control{
+#box-login .form-control{
     color: white;
     margin-bottom: 0px !important;
 }
