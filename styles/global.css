@@ -105,7 +105,15 @@ body.dark-theme {
     margin-right: 20px;
     float: right;
     z-index: 1000;
-    display: inline-grid;
+    display: inline-flex;
+    row-gap: inherit;
+    column-gap: 10px;
+    align-items: center;
+}
+#theme-toggle p{
+  position: flex;
+  align-items: center;
+  margin-bottom: 0px !important;
 }
 
 /* ----- TOGGLE DARK LIGHT MODE -----*/

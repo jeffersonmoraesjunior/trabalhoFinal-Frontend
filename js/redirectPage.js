@@ -3,23 +3,38 @@ function menuRedirect(site) {
 
   if (userLogged === "true") {
     if (site === "about") {
-      window.location.href = "about.html";
+      if (site !== (localStorage.getItem("paginaAtual"))) {
+        window.location.href = "about.html";
+        localStorage.setItem("paginaAtual", "about");
+      }
     }
     if (site === "index") {
-      window.location.href = "index.html";
+      if (site !== (localStorage.getItem("paginaAtual"))) {
+        window.location.href = "index.html";
+        localStorage.setItem("paginaAtual", "index");
+      }
     }
     if (site === "login") {
       localStorage.setItem("acesso", "false");
       document.getElementById("login").innerHTML = "Entrar";
       document.getElementById("sigin").removeAttribute("hidden");
-      window.location.href = "login.html";
+      if (site !== (localStorage.getItem("paginaAtual"))) {
+        window.location.href = "login.html";
+        localStorage.setItem("paginaAtual", "login");
+      }
     }
   } else {
     if (site === "formulario") {
-      window.location.href = "formulario.html";
+      if (site !== (localStorage.getItem("paginaAtual"))) {
+        window.location.href = "formulario.html";
+        localStorage.setItem("paginaAtual", "formulario");
+      }
     }
     if (site === "login") {
-      window.location.href = "login.html";
+      if (site !== (localStorage.getItem("paginaAtual"))) {
+        window.location.href = "login.html";
+        localStorage.setItem("paginaAtual", "login");
+      }
     }
   }
 }

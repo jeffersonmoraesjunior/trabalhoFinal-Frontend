@@ -15,6 +15,7 @@ if (((location.pathname === '/login.html') || (location.pathname ==='/formulario
 }
 if(userLogged === 'true'){
   document.getElementById('login').innerHTML = 'Sair';
+  document.getElementById('userNameLogged').innerHTML = 'Olá, ' + getUser(localStorage.getItem('remember_me_user')).name.split(" ")[0];
   document.getElementById('sigin').setAttribute('hidden', true);
 }
 
@@ -57,3 +58,13 @@ themeToggle.addEventListener('click', () => {
   const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
   localStorage.setItem('theme', currentTheme);
 });
+
+function getUser(email){
+  var users = JSON.parse(localStorage.getItem("users")) || [];
+  for (var i = 0; i < users.length; i++) {
+    if (users[i].email.trim().toLowerCase() === email.trim().toLowerCase()) {
+      return users[i];
+    }
+  }
+  return null;
+}

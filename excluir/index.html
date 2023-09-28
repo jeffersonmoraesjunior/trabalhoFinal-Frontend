@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <!-- Codigo base para funcionar e trazer o header e o footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $(function () {
+            $("header").load("header.html");
+            $("footer").load("footer.html");
+        });
+    </script>
+    <link rel="shortcut icon" href="./assets/img/AE_logo.ico" type="image/x-icon">
+    <!-- Fim Codigo base para funcionar e trazer o header e o footer: crie a tag header e footer no body -->
+
+
+    <title>ÆDO Music</title>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXKFNF9R" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header></header>
+
+    <section class="dialog" id="dialog">
+        <div class="cookies-card">
+            <p class="title">Consentimento de Cookies</p>
+            <p class="info">Ao utilizar este site, você automaticamente concorda com o uso de cookies. <a
+                    href="https://support.google.com/chrome/answer/95647?hl=pt-BR&co=GENIE.Platform%3DDesktop">Saiba
+                    Mais</a>
+            </p>
+            <button class="cta" onclick="aceitarBotao()" id="ctaBtn">Aceitar todos</button>
+            <a href="https://support.google.com/chrome/answer/95647?hl=pt-BR&co=GENIE.Platform%3DDesktop"
+                class="settings" target="_blank">Configurações de Cookies</a>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>ÆDO</h1>
+            <img src="https://i.gifer.com/A8BO.gif" alt="">
+            <p class="description">No recanto do nosso site, a música é uma odisseia de descobertas. Embarque numa vasta
+                viagem por sons e
+                géneros, que vão desde os recém-nascidos até aos clássicos eternos. Conceda-se a um mergulho profundo
+                num mundo onde a música é a própria essência da emoção. 'Explorar. Descobrir. Escutar.' Junte-se a nós
+                nesta demanda pela trilha sonora perfeita, onde cada nota é um portal para a imaginação.
+            </p>
+            <button>Saiba Mais</button>
+        </div>
+        <div class="col-sm-6 col-card">
+            <div class="card card1"></div>
+            <div class="card card2"></div>
+            <div class="card card3"></div>
+            <div class="card card4"></div>
+        </div>
+
+    </div>
+
+    <!--Remaining section-->
+    <footer></footer>
+
+    <!-- adicionando o javaScript  -->
+    <script src="./js/login.js"></script>
+    <script src="./js/dialog_pop_up.js"></script>
+
+</body>
+
+</html>

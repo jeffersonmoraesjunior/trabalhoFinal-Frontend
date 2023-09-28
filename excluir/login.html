@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/login.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Codigo base para funcionar e trazer o header e o footer -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("header").load("header.html");
+            $("footer").load("footer.html");
+        });
+    </script>
+    <!-- Fim Codigo base para funcionar e trazer o header e o footer: crie a tag header e footer no body -->
+
+
+    <title>ÆDO Music</title>
+
+</head>
+
+<body>
+
+    <header></header>
+
+    <div class="form-wrapper">
+        <h2>Entrar</h2>
+        <form action="#">
+            <div class="form-control">
+                <input type="email" id="email" required>
+                <label>Email número de telefone</label>
+            </div>
+            <div class="form-control">
+                <input type="password" id="password" required>
+                <label>Senha</label>
+            </div>
+            <button type="submit" onclick="logar()">Entrar</button>
+            <div class="form-help">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Lembre-se de mim</label>
+                </div>
+                <a href="#">Ajuda?</a>
+            </div>
+        </form>
+        <p>Novo por aqui? <a href="./formulario.html">Criar conta</a></p>
+        <small>
+            Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
+            <a href="#">Saiba mais</a>
+        </small>
+    </div>
+
+    <!--Remaining section-->
+    <footer></footer>
+
+    <!-- adicionando o javaScript  -->
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/login.js"></script>
+    <script>
+        var remember_me = localStorage.getItem("remember_me");        
+        
+        if (remember_me == "true") {
+            document.getElementById("email").value = localStorage.getItem("remember_me_user");
+            document.getElementById("password").value = localStorage.getItem("remember_me_pass");
+            document.getElementById("remember-me").checked = true;
+        }
+    </script>
+
+</body>
+
+</html>
