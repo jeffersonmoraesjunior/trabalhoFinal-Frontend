@@ -1,8 +1,8 @@
 function logar() {
-  var email = document.getElementById("email");
-  var password = document.getElementById("password");
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
 
-  if (email.value == "admin@aedo.com" && password.value == "123") {
+  if (verifyUser(email, password) || (email == "admin@aedo.com" && password == "123")) {
     localStorage.setItem("acesso", true);
 
     // Evite o envio do formulário padrão
@@ -26,7 +26,7 @@ function cadastrar() {
     document.getElementById("gridCheck").checked == true
   ) {
 
-    const user = {
+    var user = {
       email: document.getElementById("email").value,
       password: document.getElementById("password").value,
       userCity: document.getElementById("userCity").value,
@@ -36,32 +36,37 @@ function cadastrar() {
       inputZip: document.getElementById("inputZip").value,
     };
 
-    if(userExist(user) === false){
-      var users = [];
-      var get = JSON.parse(localStorage.getItem("users"));
-      users = [get];
+    if (userExist(user) === false) {
+      var users = JSON.parse(localStorage.getItem("users")) || [];
+      // var users = get ? [get, user] : [user];
+      // users = [get];
       users.push(user);
 
-    localStorage.setItem("users", JSON.stringify(users));
-    localStorage.setItem("acesso", true);
-    // alert(get2[1].email);
-    } else{
-        alert("Usuário já cadastrado!");
+      localStorage.setItem("users", JSON.stringify(users));
+      localStorage.setItem("acesso", true);
+      // alert(get2[1].email);
+    } else {
+      alert("Usuário já cadastrado!");
     }
   }
+}
 
-  function userExist(user) {
-    var get = JSON.parse(localStorage.getItem("users"));
-    array.forEach(element => {
-        if(element )
-    });
-    for (var i = 0; i < get.length; i++) {
-      if (get[i].email === user.email) {
-        alert("Usuário nao cadastrado!");
-        return true;
-      }
+function userExist(user) {
+  var users = JSON.parse(localStorage.getItem("users")) || [];
+  for (var i = 0; i < users.length; i++) {
+    if (users[i].email === user.email) {
+      return true;
     }
-    alert("Usuário já cadastrado!");
-    return false;
   }
+  return false;
+}
+
+function verifyUser(email, password) {
+  var users = JSON.parse(localStorage.getItem("users")) || [];
+  for (var i = 0; i < users.length; i++) {
+    if (users[i].email.trim().toLowerCase() === email.trim().toLowerCase() && users[i].password === password) {
+      return true;
+    }
+  }
+  return false;
 }
