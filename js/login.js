@@ -19,6 +19,7 @@ function logar() {
     event.preventDefault();
     // sendEmail();
 
+    localStorage.setItem("paginaAtual", "index");
     location.replace("index.html");
   } else {
     alert("Usuario ou Senha Invalidos!");
@@ -61,6 +62,7 @@ function cadastrar() {
       localStorage.setItem("remember_me_user", user.email);
       localStorage.setItem("remember_me_pass", user.password);
 
+      localStorage.setItem("paginaAtual", "index");
       location.replace('index.html');
     } else {
       alert("Usuário já cadastrado!");

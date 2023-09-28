@@ -6,6 +6,12 @@
 // Check if the user's is logged
 const userLogged = localStorage.getItem('acesso');
 
+if(localStorage.getItem("acesso") === "true"){
+  document.getElementById("iconUserLogged").removeAttribute('hidden', true);
+} else{
+  document.getElementById("iconUserLogged").setAttribute('hidden', true);
+}
+
 if (((location.pathname !=='/login.html') && (location.pathname !=='/formulario.html')) && (userLogged === null || userLogged === 'false')) {
   location.replace('login.html');
 }

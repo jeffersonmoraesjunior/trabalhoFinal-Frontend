@@ -19,8 +19,8 @@ function menuRedirect(site) {
       document.getElementById("login").innerHTML = "Entrar";
       document.getElementById("sigin").removeAttribute("hidden");
       if (site !== (localStorage.getItem("paginaAtual"))) {
-        window.location.href = "login.html";
         localStorage.setItem("paginaAtual", "login");
+        window.location.href = "login.html";
       }
     }
   } else {
