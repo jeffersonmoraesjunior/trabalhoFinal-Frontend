@@ -19,7 +19,7 @@ Em caracter de estudo e aprimoramentos da máteria de frontEnd, elaborei um exem
 <br>
 
 <p align="center">
-  <img alt="img-aedo" src="./assets/" width="100%">
+  <img alt="img-aedo" src="./assets/img/capaReadMe.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -27,6 +27,7 @@ Em caracter de estudo e aprimoramentos da máteria de frontEnd, elaborei um exem
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
+- VLibras
 - HTML e CSS
 - JavaScript && Propriedades (localStorage)
 - Git e Github
@@ -43,7 +44,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Mario Bros é um pequeno projeto de aprimoramento em FrontEnd.
+O projeto Aedo foi elaborado em caracter de um trabalho final da matéria de Front-end no Serratec.
 
 ## 🔖 Layout
 
@@ -55,4 +56,9 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Jefferson Moraes!
+Feito com ♥ by 
+<a href="https://github.com/jeffersonmoraesjunior">Jefferson Moraes</a> | | 
+<a href="https://github.com/Nimai360">Nimai Marchiori</a> | |
+<a href="https://github.com/gguedes00">Gabriel Guedes</a>  | | 
+<a href="https://github.com/SteffanyRodrigues">Sthefanny Rodrigues</a>  | | 
+<a href="https://github.com/naju15">Ana Julya</a> !
